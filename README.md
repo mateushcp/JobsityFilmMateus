@@ -4,7 +4,8 @@
 Um aplicativo iOS para navegar e buscar séries de TV usando a [TVMaze API](https://www.tvmaze.com/api).  
 O projeto está escrito em Swift, seguindo arquitetura **MVVM** e usando um **Coordinator** para navegação.
 
-![alt text](image-1.png)
+![alt text](WhatsAppVideo2025-06-24at02.21.38-ezgif.com-video-to-gif-converter.gif)
+
 ---
 
 ## 🎬 Conteúdo
