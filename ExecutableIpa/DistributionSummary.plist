@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Filmcity.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>B9924905C342FF83A469FCC89B4D772CE90EDF79</string>
+				<key>dateExpires</key>
+				<string>15/01/26</string>
+				<key>type</key>
+				<string>Cloud Managed Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>WNNJ4KX4AX.Abidu.Filmcity</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>WNNJ4KX4AX</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Filmcity.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>36549323-4775-46e3-89fb-f3cb5c9ad86f</string>
+				<key>dateExpires</key>
+				<string>15/01/26</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: Abidu.Filmcity</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>WNNJ4KX4AX</string>
+				<key>name</key>
+				<string>Mateus de Paulo</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
