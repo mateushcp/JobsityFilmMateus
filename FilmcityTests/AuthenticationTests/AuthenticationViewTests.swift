@@ -55,7 +55,7 @@ class AuthenticationViewTests: XCTestCase {
     textField.text = "9999"
     
     let submitButtons = view.subviews.compactMap { $0 as? UIButton }
-      .filter { $0.currentTitle == "Entrar com PIN" }
+      .filter { $0.currentTitle == "Login with PIN" }
     XCTAssertFalse(submitButtons.isEmpty, "Não achei o botão Entrar com PIN")
     let submit = submitButtons.first!
     

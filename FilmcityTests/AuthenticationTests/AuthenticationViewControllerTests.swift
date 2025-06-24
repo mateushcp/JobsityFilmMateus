@@ -32,7 +32,7 @@ class AuthenticationViewControllerTests: XCTestCase {
     let textField = sut.authView.subviews.compactMap { $0 as? UITextField }.first!
     textField.text = "0000"
     let submitButton = sut.authView.subviews.compactMap { $0 as? UIButton }
-      .first { $0.currentTitle == "Entrar com PIN" }!
+      .first { $0.currentTitle == "Login with PIN" }!
     
     submitButton.sendActions(for: .touchUpInside)
     
