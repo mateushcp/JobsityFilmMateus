@@ -25,7 +25,7 @@ class ShowListView: UIView {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Populares"
+        label.text = "Popular"
         label.font = Typography.titleXL
         label.textColor = Colors.gray100
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +34,7 @@ class ShowListView: UIView {
 
     private let subtitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Explore os filmes populares hoje e encontre coisas novas para assistir!"
+        label.text = "Explore popular movies today and find new things to watch!"
         label.font = Typography.bodySM
         label.textColor = Colors.gray400
         label.numberOfLines = 2

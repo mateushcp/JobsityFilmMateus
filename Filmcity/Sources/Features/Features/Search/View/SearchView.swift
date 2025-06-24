@@ -25,7 +25,7 @@ class SearchView: UIView {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Buscar"
+        label.text = "Search"
         label.font = Typography.titleXL
         label.textColor = Colors.gray100
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +34,7 @@ class SearchView: UIView {
 
     private let subtitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Encontre filmes buscando pelo título"
+        label.text = "Find movies by searching by title"
         label.font = Typography.bodySM
         label.textColor = Colors.gray400
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -43,7 +43,7 @@ class SearchView: UIView {
 
     let searchBar: UISearchBar = {
         let searchBar = UISearchBar()
-        searchBar.placeholder = "Pesquisar série"
+        searchBar.placeholder = "Search series"
         searchBar.searchBarStyle = .minimal
         searchBar.translatesAutoresizingMaskIntoConstraints = false
         return searchBar

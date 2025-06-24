@@ -26,7 +26,7 @@ final class AuthenticationView: UIView {
         let label = UILabel()
         label.font = Typography.titleLG
         label.textColor = Colors.white
-        label.text = "Olá, bem-vindo!"
+        label.text = "Hello, welcome!"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -35,7 +35,7 @@ final class AuthenticationView: UIView {
         let label = UILabel()
         label.font = Typography.bodyMD
         label.textColor = Colors.gray600
-        label.text = "Desbloqueie com segurança usando Face ID ou digite seu PIN."
+        label.text = "Unlock securely using Face ID or enter your PIN."
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -52,7 +52,7 @@ final class AuthenticationView: UIView {
     private let pinTextField: UITextField = {
         let textField = UITextField()
         textField.isSecureTextEntry = true
-        textField.placeholder = "Digite seu PIN"
+        textField.placeholder = "type your PIN"
         textField.font = Typography.bodyMD
         textField.textColor = .white
         textField.borderStyle = .roundedRect
@@ -63,7 +63,7 @@ final class AuthenticationView: UIView {
 
     private let submitPinButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Entrar com PIN", for: .normal)
+        button.setTitle("Login with PIN", for: .normal)
         button.titleLabel?.font = Typography.bodyMD
         button.tintColor = .white
         button.translatesAutoresizingMaskIntoConstraints = false
