@@ -1,8 +1,10 @@
 # JobsityFilmMateus
+![alt text](image.png)
 
 Um aplicativo iOS para navegar e buscar séries de TV usando a [TVMaze API](https://www.tvmaze.com/api).  
 O projeto está escrito em Swift, seguindo arquitetura **MVVM** e usando um **Coordinator** para navegação.
 
+![alt text](image-1.png)
 ---
 
 ## 🎬 Conteúdo
