@@ -21,7 +21,7 @@ O projeto está escrito em Swift, seguindo arquitetura **MVVM** e usando um **Co
 
 ## 🚀 Clone o repositório
 
-```bash
+bash
 git clone https://github.com/mateushcp/JobsityFilmMateus.git
 cd JobsityFilmMateus
 
