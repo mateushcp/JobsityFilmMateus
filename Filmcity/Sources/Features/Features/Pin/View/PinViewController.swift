@@ -29,7 +29,6 @@ final class SetPinViewController: UIViewController {
             setPinView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             setPinView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             setPinView.widthAnchor.constraint(equalToConstant: 300),
-            setPinView.heightAnchor.constraint(equalToConstant: 240)
         ])
     }
 }
@@ -38,8 +37,8 @@ extension SetPinViewController: SetPinViewDelegate {
     func setPinView(_ view: SetPinView, didTapSave pin: String, confirm: String) {
         guard !pin.isEmpty, pin == confirm else {
             let alert = UIAlertController(
-                title: "Erro",
-                message: "PIN vazio ou não confere.",
+                title: "Error",
+                message: "PIN is empty or not matching.",
                 preferredStyle: .alert
             )
             alert.addAction(.init(title: "OK", style: .default))

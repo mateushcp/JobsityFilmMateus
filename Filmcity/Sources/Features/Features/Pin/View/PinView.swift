@@ -16,7 +16,7 @@ final class SetPinView: UIView {
     
     private let messageLabel: UILabel = {
         let label = UILabel()
-        label.text = "Nenhum PIN cadastrado.\nPor favor, cadastre um novo PIN."
+        label.text = "No PIN is registered.\nPlease, type a PIN."
         label.font = Typography.bodyMD
         label.textColor = Colors.white
         label.numberOfLines = 0
@@ -27,7 +27,7 @@ final class SetPinView: UIView {
     
     private let pinField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Digite seu PIN"
+        textField.placeholder = "Type your PIN"
         textField.isSecureTextEntry = true
         textField.borderStyle = .roundedRect
         textField.keyboardType = .numberPad
@@ -37,7 +37,7 @@ final class SetPinView: UIView {
     
     private let confirmField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Confirme seu PIN"
+        textField.placeholder = "Confirm yout PIN"
         textField.isSecureTextEntry = true
         textField.borderStyle = .roundedRect
         textField.keyboardType = .numberPad
@@ -47,7 +47,7 @@ final class SetPinView: UIView {
     
     private let saveButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Salvar PIN", for: .normal)
+        button.setTitle("Save PIN", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -63,21 +63,21 @@ final class SetPinView: UIView {
         addSubview(saveButton)
         
         NSLayoutConstraint.activate([
-            messageLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            messageLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 24),
             messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             messageLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
-            
+
             pinField.topAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: 24),
             pinField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             pinField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
-            
+
             confirmField.topAnchor.constraint(equalTo: pinField.bottomAnchor, constant: 16),
             confirmField.leadingAnchor.constraint(equalTo: pinField.leadingAnchor),
             confirmField.trailingAnchor.constraint(equalTo: pinField.trailingAnchor),
-            
+
             saveButton.topAnchor.constraint(equalTo: confirmField.bottomAnchor, constant: 32),
-            saveButton.centerXAnchor.constraint(equalTo: centerXAnchor)
+            saveButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            saveButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24)
         ])
         
         saveButton.addTarget(self, action: #selector(didTapSave), for: .touchUpInside)
